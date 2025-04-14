@@ -2,6 +2,7 @@
 
 # Disable Wi-Fi Power Save
 echo "Disabling Wi-Fi Power Save on wlo1..."
+sudo pacman -S iw
 sudo iw dev wlo1 set power_save off
 
 # Create systemd service to make it persistent
