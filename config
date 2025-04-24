@@ -1,0 +1,31 @@
+
+# Guess the weather hourly
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#A4C2F4
+
+# Query my default IP address only on startup
+
+# Update time every 5 seconds
+[time]
+command=date +%T
+interval=1
+
+[battery2]
+command=~/.config/i3blocks/battery2/battery2
+markup=pango
+interval=30
+
+#if you prefer automatic updating
+[volume-pipewire]
+command=~/.config/i3blocks/volume-pipewire/volume-pipewire
+interval=persist
+SUBSCRIBE=1
+USE_ALSA_NAME=1
+
+
+[time_of_day]
+command=~/.config/i3blocks/time_message.sh
+interval=60
+
