@@ -1,4 +1,4 @@
-sudo pacman -S sway noto-fonts-emoji swaybg rsync reflector firefox fuzzel foot pipewire pipewire-pulse pipewire-alsa pipewire-jack flatpak i3blocks acpi
+sudo pacman -S sway noto-fonts-emoji ttf-nerd-fonts-symbols-mono swaybg rsync reflector firefox fuzzel foot pipewire pipewire-pulse pipewire-alsa pipewire-jack flatpak i3blocks acpi
 systemctl --user enable --now pipewire.service pipewire.socket
 systemctl --user enable --now wireplumber.service
 systemctl --user enable --now pipewire-pulse.service pipewire-pulse.socket
